@@ -13,8 +13,20 @@
 },
 {
   "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /root/projects/sylar/sylar/config.cc",
+  "file": "/root/projects/sylar/sylar/config.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/config.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
   "command": "/usr/bin/c++    -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test.dir/tests/test.cc.o -c /root/projects/sylar/tests/test.cc",
   "file": "/root/projects/sylar/tests/test.cc",
   "output": "CMakeFiles/test.dir/tests/test.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++    -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /root/projects/sylar/tests/test_config.cc",
+  "file": "/root/projects/sylar/tests/test_config.cc",
+  "output": "CMakeFiles/test_config.dir/tests/test_config.cc.o"
 }
 ]

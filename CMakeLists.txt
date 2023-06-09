@@ -7,7 +7,8 @@ set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-de
 
 set(LIB_SRC 
     sylar/log.cc
-    sylar/util.cc)
+    sylar/util.cc
+    sylar/config.cc)
 
 add_library(sylar SHARED ${LIB_SRC})
 #add_libray(sylar_static STATIC ${LIB_SRC})
@@ -15,7 +16,11 @@ add_library(sylar SHARED ${LIB_SRC})
 
 add_executable(test tests/test.cc)
 add_dependencies(test sylar)
-target_link_libraries(test sylar)
+target_link_libraries(test sylar yaml-cpp)
+
+add_executable(test_config tests/test_config.cc)
+add_dependencies(test_config sylar)
+target_link_libraries(test_config sylar yaml-cpp)
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
