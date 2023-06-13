@@ -120,7 +120,13 @@ CMakeFiles/test.dir/tests/test.cc.o: /root/projects/sylar/tests/test.cc \
  /usr/include/bits/syscall.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- /root/projects/sylar/tests/../sylar/singleton.h \
+ /root/projects/sylar/tests/../sylar/thread.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/thread \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/chrono \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ratio \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/limits \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ctime \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/memory \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_construct.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_uninitialized.h \
@@ -143,6 +149,11 @@ CMakeFiles/test.dir/tests/test.cc.o: /root/projects/sylar/tests/test.cc \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_base.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/atomic_lockfree_defines.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/backward/auto_ptr.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/atomic \
+ /usr/include/semaphore.h /usr/include/bits/semaphore.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/functional \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_function.h \
+ /root/projects/sylar/tests/../sylar/singleton.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/map \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tree.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_map.h \

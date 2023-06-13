@@ -11,6 +11,7 @@
 #define __SYLAR_LOG_H__
 
 #include "util.h"
+#include "thread.h"
 #include "singleton.h"
 
 #include <string>
@@ -125,9 +126,11 @@
 
 #define SYLAR_LOG_ROOT() sylar::LoggerMgr::GetInstance()->getRoot()
 
+#define SYLAR_LOG_NAME(name) sylar::LoggerMgr::GetInstance()->getLogger(name)
+
 namespace sylar
 {
-
+    class LoggerManager;
     class Logger;
 
     // 日志级别类
@@ -150,6 +153,7 @@ namespace sylar
          * @param level 日志级别
          */
         static const char *ToString(LogLevel::Level level);
+        static LogLevel::Level FromString(const std::string &str);
     };
 
     // 日志事件类
@@ -307,28 +311,38 @@ namespace sylar
         // 初始化，解析模板
         void init();
 
+        bool isError() const { return m_error; }
+
+        const std::string getPattern() const { return m_pattern; }
+
     private:
         std::string m_pattern;                // 格式模板
         std::vector<FormatItem::ptr> m_items; // 日志格式化内容项
+        bool m_error = false;
     };
 
     // 日志输出目的地:基类
     class LogAppender
     {
+        friend class Logger;
+
     public:
         // 定义LogAppender类智能指针方便使用
         typedef std::shared_ptr<LogAppender> ptr;
+        typedef Mutex MutexType;
 
         virtual ~LogAppender() {}
+
+        virtual std::string toYamlString() = 0;
 
         // 定义纯虚函数，让子类继承，并且进行重写
         virtual void Log(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event) = 0;
 
         // 设置日志格式
-        void setFormatter(LogFormatter::ptr val) { m_formatter = val; }
+        void setFormatter(LogFormatter::ptr val);
 
         // 获取日志格式
-        LogFormatter::ptr getFormatter() const { return m_formatter; }
+        LogFormatter::ptr getFormatter();
 
         // 获取日志级别
         LogLevel::Level getLevel() const { return m_level; }
@@ -336,15 +350,21 @@ namespace sylar
         // 设置日志级别
         void setLevel(LogLevel::Level level) { m_level = level; }
 
+        void setFomatter(LogFormatter::ptr val);
+
     protected:
         LogLevel::Level m_level = LogLevel::DEBUG; // 日志级别，默认是DEBUG级别
-        LogFormatter::ptr m_formatter;             // 日志格式器
+        bool m_hasFormatter = false;
+        MutexType m_mutex;
+        LogFormatter::ptr m_formatter; // 日志格式器
     };
 
     // 日志输出器
     class Logger : public std::enable_shared_from_this<Logger>
     {
     public:
+        friend class LoggerManager;
+        typedef Mutex MutexType;
         // 声明Logger类的智能指针
         typedef std::shared_ptr<Logger> ptr;
 
@@ -403,6 +423,8 @@ namespace sylar
          */
         void delAppender(LogAppender::ptr appender);
 
+        void clearAppender();
+
         // 获取日志级别
         LogLevel::Level getLevel() const { return m_level; }
 
@@ -412,11 +434,19 @@ namespace sylar
         // 获取日志名称
         const std::string getName() const { return m_name; }
 
+        void setFormatter(LogFormatter::ptr val);
+        void setFormatter(const std::string &val);
+        LogFormatter::ptr getFormatter();
+
+        std::string toYamlString();
+
     private:
         std::string m_name;                      // 日志名称
         LogLevel::Level m_level;                 // 日志级别
         std::list<LogAppender::ptr> m_appenders; // Appender集合
         LogFormatter::ptr m_formatter;           // 日志格式器
+        MutexType m_mutex;
+        Logger::ptr m_root;
     };
 
     // 输出到控制台的Appender的子类
@@ -425,6 +455,8 @@ namespace sylar
     public:
         // 声明StdoutLogAppender类的智能指针
         typedef std::shared_ptr<StdoutLogAppender> ptr;
+
+        std::string toYamlString() override;
 
         /***
          * @brief 将日志输出到控制台
@@ -443,6 +475,8 @@ namespace sylar
     public:
         // 声明StdoutLogAppender类的智能指针
         typedef std::shared_ptr<FileLogAppender> ptr;
+
+        std::string toYamlString() override;
 
         /***
          * @brief 构造函数，初始化文件名
@@ -464,12 +498,14 @@ namespace sylar
     private:
         std::string m_filename;     // 文件名
         std::ofstream m_filestream; // 文件流
+        uint64_t m_lastTime=0;
     };
 
     // 日志器管理类
     class LoggerManager
     {
     public:
+        typedef Mutex MutexType;
         // 构造函数
         LoggerManager();
 
@@ -482,7 +518,10 @@ namespace sylar
         void init();
         Logger::ptr getRoot() const { return m_root; }
 
+        std::string toYamlString();
+
     private:
+        MutexType m_mutex;
         std::map<std::string, Logger::ptr> m_loggers; // 日志输出器map
         Logger::ptr m_root;                           // 主日志输出器
     };

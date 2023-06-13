@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/projects/sylar/sylar/config.cc" "CMakeFiles/sylar.dir/sylar/config.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/config.cc.o.d"
   "/root/projects/sylar/sylar/log.cc" "CMakeFiles/sylar.dir/sylar/log.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/log.cc.o.d"
+  "/root/projects/sylar/sylar/thread.cc" "CMakeFiles/sylar.dir/sylar/thread.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/thread.cc.o.d"
   "/root/projects/sylar/sylar/util.cc" "CMakeFiles/sylar.dir/sylar/util.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/util.cc.o.d"
   )
 

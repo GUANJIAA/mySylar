@@ -1,32 +1,44 @@
 [
 {
   "directory": "/root/projects/sylar/build",
-  "command": "/usr/bin/c++ -Dsylar_EXPORTS   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/log.cc.o -c /root/projects/sylar/sylar/log.cc",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/log.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/log.cc.o -c /root/projects/sylar/sylar/log.cc",
   "file": "/root/projects/sylar/sylar/log.cc",
   "output": "CMakeFiles/sylar.dir/sylar/log.cc.o"
 },
 {
   "directory": "/root/projects/sylar/build",
-  "command": "/usr/bin/c++ -Dsylar_EXPORTS   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /root/projects/sylar/sylar/util.cc",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/util.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /root/projects/sylar/sylar/util.cc",
   "file": "/root/projects/sylar/sylar/util.cc",
   "output": "CMakeFiles/sylar.dir/sylar/util.cc.o"
 },
 {
   "directory": "/root/projects/sylar/build",
-  "command": "/usr/bin/c++ -Dsylar_EXPORTS   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /root/projects/sylar/sylar/config.cc",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/config.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /root/projects/sylar/sylar/config.cc",
   "file": "/root/projects/sylar/sylar/config.cc",
   "output": "CMakeFiles/sylar.dir/sylar/config.cc.o"
 },
 {
   "directory": "/root/projects/sylar/build",
-  "command": "/usr/bin/c++    -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test.dir/tests/test.cc.o -c /root/projects/sylar/tests/test.cc",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/thread.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/thread.cc.o -c /root/projects/sylar/sylar/thread.cc",
+  "file": "/root/projects/sylar/sylar/thread.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/thread.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test.dir/tests/test.cc.o -c /root/projects/sylar/tests/test.cc",
   "file": "/root/projects/sylar/tests/test.cc",
   "output": "CMakeFiles/test.dir/tests/test.cc.o"
 },
 {
   "directory": "/root/projects/sylar/build",
-  "command": "/usr/bin/c++    -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /root/projects/sylar/tests/test_config.cc",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_config.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /root/projects/sylar/tests/test_config.cc",
   "file": "/root/projects/sylar/tests/test_config.cc",
   "output": "CMakeFiles/test_config.dir/tests/test_config.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_thread.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_thread.dir/tests/test_thread.cc.o -c /root/projects/sylar/tests/test_thread.cc",
+  "file": "/root/projects/sylar/tests/test_thread.cc",
+  "output": "CMakeFiles/test_thread.dir/tests/test_thread.cc.o"
 }
 ]
