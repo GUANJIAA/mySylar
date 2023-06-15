@@ -126,6 +126,10 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o: \
  /root/projects/sylar/sylar/log.h /root/projects/sylar/sylar/util.h \
  /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
  /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/vector \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_vector.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_bvector.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/vector.tcc \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/environments.h /usr/include/bits/confname.h \
  /usr/include/getopt.h /root/projects/sylar/sylar/singleton.h \
@@ -158,10 +162,6 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/list \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_list.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/list.tcc \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/vector \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_vector.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_bvector.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/vector.tcc \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/sstream \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/sstream.tcc \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/fstream \

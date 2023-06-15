@@ -36,7 +36,7 @@
 #define SYLAR_LOG_LEVEL(logger, level)                                                                                       \
     if (logger->getLevel() <= level)                                                                                         \
     sylar::LogEventWrap(sylar::LogEvent::ptr(new sylar::LogEvent(logger, level, __FILE__, __LINE__, 0, sylar::GetThreadId(), \
-                                                                 sylar::GetFiberId(), time(0))))                             \
+                                                                 sylar::GetFiberId(), time(0),sylar::Thread::GetName())))                             \
         .getSS()
 
 /***
@@ -80,7 +80,7 @@
     if (logger->getLevel() <= level)                                                                          \
     sylar::LogEventWrap(sylar::LogEvent::ptr(new sylar::LogEvent(logger, level,                               \
                                                                  __FILE__, __LINE__, 0, sylar::GetThreadId(), \
-                                                                 sylar::GetFiberId(), time(0))))              \
+                                                                 sylar::GetFiberId(), time(0),sylar::Thread::GetName())))              \
         .getEvent()                                                                                           \
         ->format(fmt, __VA_ARGS__)
 
@@ -175,7 +175,7 @@ namespace sylar
          * @param time 日志事件的时间
          */
         LogEvent(std::shared_ptr<Logger> logger, LogLevel::Level level, const char *file, int32_t line, uint32_t elapse, uint32_t threadid,
-                 uint32_t fiber_id, uint64_t time);
+                 uint32_t fiber_id, uint64_t time, const std::string &thread_name);
 
         // 析构函数
         ~LogEvent();
@@ -197,6 +197,8 @@ namespace sylar
 
         // 获取当前时间
         uint64_t getTime() const { return m_time; }
+
+        const std::string &getThreadName() const { return m_threadName; }
 
         // 获取当前日志内容
         const std::string getContent() const { return m_ss.str(); }
@@ -226,6 +228,7 @@ namespace sylar
         std::stringstream m_ss;           // 日志内容流
         std::shared_ptr<Logger> m_logger; // 日志输出器
         LogLevel::Level m_level;          // 日志级别
+        std::string m_threadName;
     };
 
     // 日志事件包装器
@@ -498,7 +501,7 @@ namespace sylar
     private:
         std::string m_filename;     // 文件名
         std::ofstream m_filestream; // 文件流
-        uint64_t m_lastTime=0;
+        uint64_t m_lastTime = 0;
     };
 
     // 日志器管理类
