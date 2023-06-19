@@ -41,6 +41,10 @@ namespace sylar
 
         uint64_t getId() const { return m_id; }
 
+        State getState() const { return m_state; }
+
+        void setState(State s) { m_state = s; }
+
     public:
         // 设置当前协程
         static void SetThis(Fiber *f);
