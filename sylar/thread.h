@@ -55,7 +55,7 @@ namespace sylar
 
         ~ScopedLockImpl()
         {
-            m_mutex.unlock();
+            unlock();
         }
 
         void lock()
@@ -132,7 +132,7 @@ namespace sylar
 
         ~ReadScopedLockImpl()
         {
-            m_mutex.unlock();
+            unlock();
         }
 
         void lock()
@@ -171,7 +171,7 @@ namespace sylar
 
         ~WriteScopedLockImpl()
         {
-            m_mutex.unlock();
+            unlock();
         }
 
         void lock()

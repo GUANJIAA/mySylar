@@ -702,9 +702,12 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/basic_file.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++io.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/fstream.tcc \
+ /root/projects/sylar/tests/../sylar/scheduler.h \
  /root/projects/sylar/tests/../sylar/fiber.h /usr/include/ucontext.h \
  /usr/include/sys/ucontext.h /usr/include/signal.h \
  /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
  /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
  /usr/include/bits/sigstack.h /usr/include/bits/sigthread.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
  /root/projects/sylar/tests/../sylar/marco.h

@@ -30,12 +30,12 @@ namespace sylar
         void stop();
 
         template <class FiberOrCb>
-        void schedule(FiberOrCb fc, int threadid = -1)
+        void schedule(FiberOrCb &fc, int threadid = -1)
         {
             bool need_tickle = false;
             {
                 MutexType::Lock lock(m_mutex);
-                need_tickle = scheduleNoLock(fc, threadid)
+                need_tickle = scheduleNoLock(fc, threadid);
             }
             if (need_tickle)
             {
@@ -51,7 +51,8 @@ namespace sylar
                 MutexType::Lock lock(m_mutex);
                 while (begin != end)
                 {
-                    tickle = scheduleNoLock(&*begin) || need_tickle;
+                    need_tickle = scheduleNoLock(&*begin, -1) || need_tickle;
+                    ++begin;
                 }
             }
             if (need_tickle)
@@ -68,6 +69,8 @@ namespace sylar
         void run();
 
         void setThis();
+
+        bool hasIdleThreads() { return m_idleThreadCount > 0; }
 
     private:
         template <class FiberOrCb>
@@ -128,8 +131,8 @@ namespace sylar
     protected:
         std::vector<int> m_threadIds;
         size_t m_threadCount = 0;
-        size_t m_activeThreadCount = 0;
-        size_t m_idleThreadCount = 0;
+        std::atomic<size_t> m_activeThreadCount = {0};
+        std::atomic<size_t> m_idleThreadCount = {0};
         bool m_stopping = true;
         bool m_autoStop = false;
         int m_rootThread = 0;

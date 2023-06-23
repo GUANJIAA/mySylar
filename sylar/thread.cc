@@ -33,12 +33,9 @@ namespace sylar
 
     void Semaphore::wait()
     {
-        while (true)
+        if (sem_wait(&m_semaphore))
         {
-            if (!sem_wait(&m_semaphore))
-            {
-                return;
-            }
+            throw std::logic_error("sem_wait error");
         }
     }
 

@@ -705,4 +705,7 @@ CMakeFiles/sylar.dir/sylar/fiber.cc.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/basic_file.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++io.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/fstream.tcc \
- /root/projects/sylar/sylar/marco.h
+ /root/projects/sylar/sylar/marco.h \
+ /root/projects/sylar/sylar/scheduler.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h

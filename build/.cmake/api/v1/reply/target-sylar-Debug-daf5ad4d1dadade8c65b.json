@@ -27,14 +27,32 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 19,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 20,
+				"line" : 23,
 				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 2
 			},
 			{
 				"command" : 1,
@@ -184,6 +202,75 @@
 			[
 				4
 			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "__FILE__=\"sylar/scheduler.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				5
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 9,
+					"define" : "__FILE__=\"sylar/iomanager.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				6
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "__FILE__=\"sylar/timer.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				7
+			]
 		}
 	],
 	"id" : "sylar::@6890427a1f51a3e7e1df",
@@ -215,7 +302,10 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6,
+				7
 			]
 		}
 	],
@@ -249,6 +339,24 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 4,
 			"path" : "sylar/fiber.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 5,
+			"path" : "sylar/scheduler.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 6,
+			"path" : "sylar/iomanager.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 7,
+			"path" : "sylar/timer.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -4,5 +4,7 @@
 /root/projects/sylar/build/CMakeFiles/test_thread.dir
 /root/projects/sylar/build/CMakeFiles/test_util.dir
 /root/projects/sylar/build/CMakeFiles/test_fiber.dir
+/root/projects/sylar/build/CMakeFiles/test_scheduler.dir
+/root/projects/sylar/build/CMakeFiles/test_iomanager.dir
 /root/projects/sylar/build/CMakeFiles/edit_cache.dir
 /root/projects/sylar/build/CMakeFiles/rebuild_cache.dir

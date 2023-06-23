@@ -2,6 +2,7 @@
 #define __SYLAR_FIBER_H__
 
 #include "thread.h"
+// #include "scheduler.h"
 
 #include <ucontext.h>
 #include <memory>
@@ -9,6 +10,7 @@
 
 namespace sylar
 {
+    class Scheduler;
     class Fiber : public std::enable_shared_from_this<Fiber>
     {
     public:
@@ -28,7 +30,7 @@ namespace sylar
         Fiber();
 
     public:
-        Fiber(std::function<void()> cb, size_t stacksize = 0);
+        Fiber(std::function<void()> cb, size_t stacksize = 0, bool use_caller=false);
         ~Fiber();
 
         // 重置协程函数，并重置状态
@@ -38,6 +40,9 @@ namespace sylar
         void swapIn();
         // 切换到后台执行
         void swapOut();
+
+        void call();
+        void back();
 
         uint64_t getId() const { return m_id; }
 
@@ -58,6 +63,8 @@ namespace sylar
         static uint64_t TotablFibers();
 
         static void MainFunc();
+
+        static void CallerMainFunc();
 
         static uint64_t GetFiberId();
 

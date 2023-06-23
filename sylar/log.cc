@@ -273,9 +273,7 @@ namespace sylar
 
     LogEvent::LogEvent(std::shared_ptr<Logger> logger, LogLevel::Level level, const char *file, int32_t line, uint32_t elapse, uint32_t threadid,
                        uint32_t fiber_id, uint64_t time, const std::string &thread_name)
-        : m_file(file), m_line(line), m_elapse(elapse), m_threadId(threadid), m_fiberId(fiber_id), m_time(time), m_logger(logger), m_level(level), m_threadName(thread_name)
-    {
-    }
+        : m_file(file), m_line(line), m_elapse(elapse), m_threadId(threadid), m_fiberId(fiber_id), m_time(time), m_logger(logger), m_level(level), m_threadName(thread_name){}
 
     Logger::Logger(const std::string &name)
         : m_name(name), m_level(LogLevel::DEBUG)
@@ -368,30 +366,30 @@ namespace sylar
         }
     }
 
-    void Logger::debug(LogEvent::ptr event)
-    {
-        log(LogLevel::DEBUG, event);
-    }
+    // void Logger::debug(LogEvent::ptr event)
+    // {
+    //     log(LogLevel::DEBUG, event);
+    // }
 
-    void Logger::info(LogEvent::ptr event)
-    {
-        log(LogLevel::INFO, event);
-    }
+    // void Logger::info(LogEvent::ptr event)
+    // {
+    //     log(LogLevel::INFO, event);
+    // }
 
-    void Logger::warn(LogEvent::ptr event)
-    {
-        log(LogLevel::WARN, event);
-    }
+    // void Logger::warn(LogEvent::ptr event)
+    // {
+    //     log(LogLevel::WARN, event);
+    // }
 
-    void Logger::error(LogEvent::ptr event)
-    {
-        log(LogLevel::ERROR, event);
-    }
+    // void Logger::error(LogEvent::ptr event)
+    // {
+    //     log(LogLevel::ERROR, event);
+    // }
 
-    void Logger::fatal(LogEvent::ptr event)
-    {
-        log(LogLevel::FATAL, event);
-    }
+    // void Logger::fatal(LogEvent::ptr event)
+    // {
+    //     log(LogLevel::FATAL, event);
+    // }
 
     std::string Logger::toYamlString()
     {

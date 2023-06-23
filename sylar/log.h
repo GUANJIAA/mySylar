@@ -384,35 +384,35 @@ namespace sylar
          */
         void log(LogLevel::Level level, LogEvent::ptr event);
 
-        /***
-         * @brief 写入DEBUG级别日志
-         * @param event 日志事件
-         */
-        void debug(LogEvent::ptr event);
+        // /***
+        //  * @brief 写入DEBUG级别日志
+        //  * @param event 日志事件
+        //  */
+        // void debug(LogEvent::ptr event);
 
-        /***
-         * @brief 写入INFO级别日志
-         * @param event 日志事件
-         */
-        void info(LogEvent::ptr event);
+        // /***
+        //  * @brief 写入INFO级别日志
+        //  * @param event 日志事件
+        //  */
+        // void info(LogEvent::ptr event);
 
-        /***
-         * @description: 写入WARN级别日志
-         * @param event 日志事件
-         */
-        void warn(LogEvent::ptr event);
+        // /***
+        //  * @description: 写入WARN级别日志
+        //  * @param event 日志事件
+        //  */
+        // void warn(LogEvent::ptr event);
 
-        /***
-         * @brief 写入ERROR级别日志
-         * @param event 日志事件
-         */
-        void error(LogEvent::ptr event);
+        // /***
+        //  * @brief 写入ERROR级别日志
+        //  * @param event 日志事件
+        //  */
+        // void error(LogEvent::ptr event);
 
-        /***
-         * @brief 写入FATAL级别日志
-         * @param event 日志事件
-         */
-        void fatal(LogEvent::ptr event);
+        // /***
+        //  * @brief 写入FATAL级别日志
+        //  * @param event 日志事件
+        //  */
+        // void fatal(LogEvent::ptr event);
 
         /***
          * @brief 添加日志输出目的地

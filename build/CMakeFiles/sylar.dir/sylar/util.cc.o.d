@@ -174,4 +174,5 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: /root/projects/sylar/sylar/util.cc \
  /usr/include/signal.h /usr/include/bits/signum.h \
  /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
  /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
- /usr/include/bits/sigthread.h /usr/include/execinfo.h
+ /usr/include/bits/sigthread.h /usr/include/sys/time.h \
+ /usr/include/execinfo.h
