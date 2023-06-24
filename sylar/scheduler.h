@@ -30,7 +30,7 @@ namespace sylar
         void stop();
 
         template <class FiberOrCb>
-        void schedule(FiberOrCb &fc, int threadid = -1)
+        void schedule(FiberOrCb fc, int threadid = -1)
         {
             bool need_tickle = false;
             {

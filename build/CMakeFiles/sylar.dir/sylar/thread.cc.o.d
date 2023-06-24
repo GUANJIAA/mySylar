@@ -123,6 +123,7 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o: \
  /usr/include/semaphore.h /usr/include/bits/semaphore.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/functional \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_function.h \
+ /root/projects/sylar/sylar/noncopyable.h \
  /root/projects/sylar/sylar/log.h /root/projects/sylar/sylar/util.h \
  /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
  /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \

@@ -19,14 +19,13 @@ namespace sylar
         typedef std::shared_ptr<Timer> ptr;
 
         bool reset(uint64_t ms, bool from_now);
+        bool cancel();
+        bool refresh();
 
     private:
         Timer(uint64_t ms, std::function<void()> cb,
               bool recurring, TimerManager *manager);
         Timer(uint64_t next);
-
-        bool cancel();
-        bool refresh();
 
     private:
         bool m_recurring = false; // 是否循环定时器

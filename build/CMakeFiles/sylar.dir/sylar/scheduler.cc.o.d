@@ -124,11 +124,11 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: \
  /usr/include/semaphore.h /usr/include/bits/semaphore.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/functional \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_function.h \
- /usr/include/ucontext.h /usr/include/sys/ucontext.h \
- /usr/include/signal.h /usr/include/bits/signum.h \
- /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
- /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
- /usr/include/bits/sigthread.h \
+ /root/projects/sylar/sylar/noncopyable.h /usr/include/ucontext.h \
+ /usr/include/sys/ucontext.h /usr/include/signal.h \
+ /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
+ /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
+ /usr/include/bits/sigstack.h /usr/include/bits/sigthread.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/system_error \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/error_constants.h \
@@ -178,4 +178,22 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++io.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/fstream.tcc \
  /usr/include/string.h /root/projects/sylar/sylar/marco.h \
- /usr/include/assert.h
+ /usr/include/assert.h /root/projects/sylar/sylar/hook.h \
+ /root/projects/sylar/sylar/iomanager.h \
+ /root/projects/sylar/sylar/timer.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/set \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_set.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_multiset.h \
+ /root/projects/sylar/sylar/fd_manager.h /usr/include/dlfcn.h \
+ /usr/include/bits/dlfcn.h /usr/include/sys/uio.h /usr/include/bits/uio.h \
+ /usr/include/sys/ioctl.h /usr/include/bits/ioctls.h \
+ /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
+ /usr/include/linux/ioctl.h /usr/include/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h /usr/include/bits/ioctl-types.h \
+ /usr/include/sys/ttydefaults.h /usr/include/sys/socket.h \
+ /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
+ /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/linux/falloc.h /usr/include/bits/stat.h

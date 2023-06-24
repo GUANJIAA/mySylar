@@ -123,6 +123,7 @@ CMakeFiles/sylar.dir/sylar/timer.cc.o: \
  /usr/include/semaphore.h /usr/include/bits/semaphore.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/functional \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_function.h \
+ /root/projects/sylar/sylar/noncopyable.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/set \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tree.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_set.h \

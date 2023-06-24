@@ -768,6 +768,7 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h
  /usr/include/semaphore.h
  /usr/include/bits/semaphore.h
+ /root/projects/sylar/sylar/noncopyable.h
  /root/projects/sylar/sylar/singleton.h
  /opt/rh/devtoolset-7/root/usr/include/c++/7/fstream
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/basic_file.h

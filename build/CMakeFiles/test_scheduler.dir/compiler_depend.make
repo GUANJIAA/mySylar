@@ -768,6 +768,7 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h \
   /usr/include/semaphore.h \
   /usr/include/bits/semaphore.h \
+  /root/projects/sylar/sylar/noncopyable.h \
   /root/projects/sylar/sylar/singleton.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/fstream \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/basic_file.h \
@@ -786,10 +787,14 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
   /usr/include/bits/sigthread.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
+  /root/projects/sylar/sylar/iomanager.h \
+  /root/projects/sylar/sylar/timer.h \
   /root/projects/sylar/sylar/marco.h
 
 
 /root/projects/sylar/sylar/marco.h:
+
+/root/projects/sylar/sylar/timer.h:
 
 /usr/include/bits/sigstack.h:
 
@@ -1363,6 +1368,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/streambuf.tcc:
 
+/root/projects/sylar/sylar/noncopyable.h:
+
 /usr/include/boost/mpl/aux_/config/dtp.hpp:
 
 /usr/include/boost/preprocessor/logical/bitand.hpp:
@@ -1654,6 +1661,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 /usr/include/boost/config/user.hpp:
 
 /usr/include/boost/type_traits/detail/ice_eq.hpp:
+
+/root/projects/sylar/sylar/iomanager.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/shared_ptr_base.h:
 

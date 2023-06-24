@@ -697,6 +697,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/ratio \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h \
  /usr/include/semaphore.h /usr/include/bits/semaphore.h \
+ /root/projects/sylar/tests/../sylar/noncopyable.h \
  /root/projects/sylar/tests/../sylar/singleton.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/fstream \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/basic_file.h \
@@ -710,9 +711,10 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: \
  /usr/include/bits/sigstack.h /usr/include/bits/sigthread.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
- /root/projects/sylar/tests/../sylar/marco.h \
  /root/projects/sylar/tests/../sylar/iomanager.h \
- /root/projects/sylar/tests/../sylar/timer.h /usr/include/fcntl.h \
+ /root/projects/sylar/tests/../sylar/timer.h \
+ /root/projects/sylar/tests/../sylar/marco.h \
+ /root/projects/sylar/tests/../sylar/iomanager.h /usr/include/fcntl.h \
  /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
  /usr/include/bits/uio.h /usr/include/linux/falloc.h \
  /usr/include/bits/stat.h /usr/include/arpa/inet.h \

@@ -15,6 +15,8 @@
 #include "singleton.h"
 #include "thread.h"
 #include "scheduler.h"
+#include "iomanager.h"
+#include "timer.h"
 #include "util.h"
 #include "fiber.h"
 #include "config.h"

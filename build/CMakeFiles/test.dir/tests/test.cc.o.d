@@ -157,6 +157,7 @@ CMakeFiles/test.dir/tests/test.cc.o: /root/projects/sylar/tests/test.cc \
  /usr/include/semaphore.h /usr/include/bits/semaphore.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/functional \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_function.h \
+ /root/projects/sylar/tests/../sylar/noncopyable.h \
  /root/projects/sylar/tests/../sylar/singleton.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/map \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tree.h \

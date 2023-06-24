@@ -123,11 +123,12 @@ CMakeFiles/sylar.dir/sylar/fiber.cc.o: \
  /usr/include/semaphore.h /usr/include/bits/semaphore.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/functional \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_function.h \
- /usr/include/ucontext.h /usr/include/sys/ucontext.h \
- /usr/include/signal.h /usr/include/bits/signum.h \
- /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
- /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
- /usr/include/bits/sigthread.h /root/projects/sylar/sylar/config.h \
+ /root/projects/sylar/sylar/noncopyable.h /usr/include/ucontext.h \
+ /usr/include/sys/ucontext.h /usr/include/signal.h \
+ /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
+ /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
+ /usr/include/bits/sigstack.h /usr/include/bits/sigthread.h \
+ /root/projects/sylar/sylar/config.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/sstream \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/istream \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/ios \

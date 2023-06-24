@@ -22,7 +22,8 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8
 					]
 				}
 			],
@@ -44,7 +45,8 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8
 					]
 				}
 			],
@@ -53,56 +55,63 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sylar::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sylar-Debug-daf5ad4d1dadade8c65b.json",
+					"jsonFile" : "target-sylar-Debug-107228a0ec36fafeb1a9.json",
 					"name" : "sylar",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-1536a58a787f5fd2f026.json",
+					"jsonFile" : "target-test-Debug-0e51f6e1f4f36451d437.json",
 					"name" : "test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_config::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_config-Debug-a62c234865ff2df3ab18.json",
+					"jsonFile" : "target-test_config-Debug-c2b43ed9bc9602380fa8.json",
 					"name" : "test_config",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_fiber::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_fiber-Debug-f170f30ec766e93d0c38.json",
+					"jsonFile" : "target-test_fiber-Debug-b66375e251d7c0fa0896.json",
 					"name" : "test_fiber",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "test_hook::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_hook-Debug-dbec87f29ef2d41c7180.json",
+					"name" : "test_hook",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "test_iomanager::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_iomanager-Debug-a227a5bbe41f58c23cd3.json",
+					"jsonFile" : "target-test_iomanager-Debug-e6d8379addeecb5bc8cb.json",
 					"name" : "test_iomanager",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_scheduler::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_scheduler-Debug-352cc73aaf6153324167.json",
+					"jsonFile" : "target-test_scheduler-Debug-6f9ec5b1cc8173769b35.json",
 					"name" : "test_scheduler",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_thread::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_thread-Debug-c5f84f1e16a13099464c.json",
+					"jsonFile" : "target-test_thread-Debug-79fd3a3a10e636dd8de5.json",
 					"name" : "test_thread",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_util::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_util-Debug-b3fcbf6b5bbdbf6536fd.json",
+					"jsonFile" : "target-test_util-Debug-8229f5f2dbec42f1f86e.json",
 					"name" : "test_util",
 					"projectIndex" : 0
 				}

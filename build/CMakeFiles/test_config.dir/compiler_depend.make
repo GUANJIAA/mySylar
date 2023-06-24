@@ -767,6 +767,7 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: /root/projects/sylar/tests/te
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h \
   /usr/include/semaphore.h \
   /usr/include/bits/semaphore.h \
+  /root/projects/sylar/sylar/noncopyable.h \
   /root/projects/sylar/sylar/singleton.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/fstream \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/basic_file.h \
@@ -1330,6 +1331,8 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: /root/projects/sylar/tests/te
 /usr/include/boost/preprocessor/stringize.hpp:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/streambuf.tcc:
+
+/root/projects/sylar/sylar/noncopyable.h:
 
 /usr/include/boost/mpl/aux_/config/dtp.hpp:
 

@@ -188,6 +188,7 @@ CMakeFiles/test.dir/tests/test.cc.o: /root/projects/sylar/tests/test.cc \
   /usr/include/bits/semaphore.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/functional \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_function.h \
+  /root/projects/sylar/sylar/noncopyable.h \
   /root/projects/sylar/sylar/singleton.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/map \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_tree.h \
@@ -593,9 +594,17 @@ CMakeFiles/test.dir/tests/test.cc.o: /root/projects/sylar/tests/test.cc \
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/backward/auto_ptr.h:
 
+/opt/rh/devtoolset-7/root/usr/include/c++/7/fstream:
+
+/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_classes.h:
+
+/usr/include/semaphore.h:
+
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_iterator_base_funcs.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/functional:
+
+/root/projects/sylar/sylar/noncopyable.h:
 
 /usr/include/bits/setjmp.h:
 
@@ -606,9 +615,3 @@ CMakeFiles/test.dir/tests/test.cc.o: /root/projects/sylar/tests/test.cc \
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/list.tcc:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/sstream:
-
-/opt/rh/devtoolset-7/root/usr/include/c++/7/bits/locale_classes.h:
-
-/usr/include/semaphore.h:
-
-/opt/rh/devtoolset-7/root/usr/include/c++/7/fstream:
