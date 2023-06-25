@@ -18,6 +18,8 @@
 #include "iomanager.h"
 #include "timer.h"
 #include "util.h"
+#include "endian.h"
+#include "hook.h"
 #include "fiber.h"
 #include "config.h"
 #include "marco.h"

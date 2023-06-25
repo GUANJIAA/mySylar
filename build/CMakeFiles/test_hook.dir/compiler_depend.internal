@@ -818,6 +818,9 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o
  /usr/include/boost/range/detail/misc_concept.hpp
  /usr/include/boost/range/detail/safe_bool.hpp
  /usr/include/boost/container/container_fwd.hpp
+ /root/projects/sylar/sylar/endian.h
+ /usr/include/byteswap.h
+ /root/projects/sylar/sylar/hook.h
  /root/projects/sylar/sylar/marco.h
  /usr/include/arpa/inet.h
  /usr/include/netinet/in.h

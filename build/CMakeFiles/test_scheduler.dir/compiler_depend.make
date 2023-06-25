@@ -789,10 +789,72 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
   /root/projects/sylar/sylar/iomanager.h \
   /root/projects/sylar/sylar/timer.h \
+  /root/projects/sylar/sylar/endian.h \
+  /usr/include/byteswap.h \
+  /root/projects/sylar/sylar/hook.h \
+  /root/projects/sylar/sylar/fd_manager.h \
+  /usr/include/dlfcn.h \
+  /usr/include/bits/dlfcn.h \
+  /usr/include/sys/uio.h \
+  /usr/include/bits/uio.h \
+  /usr/include/sys/ioctl.h \
+  /usr/include/bits/ioctls.h \
+  /usr/include/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/bits/ioctl-types.h \
+  /usr/include/sys/ttydefaults.h \
+  /usr/include/sys/socket.h \
+  /usr/include/bits/socket.h \
+  /usr/include/bits/socket_type.h \
+  /usr/include/bits/sockaddr.h \
+  /usr/include/asm/socket.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/asm/sockios.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/fcntl.h \
+  /usr/include/bits/fcntl.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/bits/stat.h \
   /root/projects/sylar/sylar/marco.h
 
 
 /root/projects/sylar/sylar/marco.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/bits/sockaddr.h:
+
+/usr/include/bits/socket_type.h:
+
+/usr/include/bits/socket.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/bits/ioctls.h:
+
+/usr/include/bits/uio.h:
+
+/usr/include/bits/dlfcn.h:
+
+/root/projects/sylar/sylar/fd_manager.h:
+
+/usr/include/sys/uio.h:
+
+/root/projects/sylar/sylar/hook.h:
+
+/usr/include/byteswap.h:
+
+/usr/include/sys/ioctl.h:
 
 /root/projects/sylar/sylar/timer.h:
 
@@ -840,6 +902,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 
 /usr/include/boost/iterator/iterator_adaptor.hpp:
 
+/usr/include/sys/socket.h:
+
 /usr/include/boost/range/reverse_iterator.hpp:
 
 /usr/include/boost/range/empty.hpp:
@@ -853,6 +917,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 /usr/include/boost/range/mutable_iterator.hpp:
 
 /usr/include/boost/range/iterator.hpp:
+
+/usr/include/bits/ioctl-types.h:
 
 /usr/include/boost/range/functions.hpp:
 
@@ -993,6 +1059,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 /usr/include/boost/mpl/quote.hpp:
 
 /usr/include/boost/mpl/protect.hpp:
+
+/usr/include/sys/ttydefaults.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp:
 
@@ -1154,6 +1222,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 
 /usr/include/boost/type_traits/is_signed.hpp:
 
+/usr/include/dlfcn.h:
+
 /usr/include/boost/type_traits/make_unsigned.hpp:
 
 /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
@@ -1223,6 +1293,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 /usr/include/boost/mpl/void.hpp:
 
 /usr/include/boost/mpl/tag.hpp:
+
+/root/projects/sylar/sylar/endian.h:
 
 /usr/include/boost/mpl/vector/aux_/pop_back.hpp:
 
@@ -1518,6 +1590,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/ext/atomicity.h:
 
+/usr/include/bits/fcntl-linux.h:
+
 /usr/include/errno.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/cxxabi_init_exception.h:
@@ -1556,6 +1630,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 
 /usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
 
+/usr/include/asm-generic/ioctl.h:
+
 /usr/include/boost/preprocessor/seq/for_each_i.hpp:
 
 /usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
@@ -1585,6 +1661,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 /usr/include/boost/preprocessor/detail/check.hpp:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/ostream.tcc:
+
+/usr/include/linux/falloc.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/error_constants.h:
 
@@ -1818,6 +1896,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/stdexcept:
 
+/usr/include/bits/fcntl.h:
+
 /usr/local/include/yaml-cpp/node/ptr.h:
 
 /usr/include/bits/stdlib-float.h:
@@ -1837,6 +1917,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 /usr/include/boost/type_traits/intrinsics.hpp:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/gthr-default.h:
+
+/usr/include/asm/ioctls.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/unordered_set.h:
 
@@ -2136,6 +2218,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 
 /usr/include/boost/mpl/aux_/value_wknd.hpp:
 
+/usr/include/asm/sockios.h:
+
 /usr/include/boost/mpl/aux_/config/eti.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
@@ -2159,6 +2243,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 /usr/include/boost/mpl/aux_/integral_wrapper.hpp:
 
 /usr/include/boost/preprocessor/facilities/identity.hpp:
+
+/usr/include/asm-generic/ioctls.h:
 
 /usr/include/boost/mpl/bool.hpp:
 
@@ -2205,6 +2291,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 /usr/include/boost/preprocessor/control/iif.hpp:
 
 /usr/include/boost/preprocessor/list/detail/fold_right.hpp:
+
+/usr/include/asm/ioctl.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
 
@@ -2321,6 +2409,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/projects/sylar/te
 /usr/include/boost/mpl/aux_/na.hpp:
 
 /usr/include/boost/type_traits/is_volatile.hpp:
+
+/usr/include/asm/socket.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/debug/assertions.h:
 

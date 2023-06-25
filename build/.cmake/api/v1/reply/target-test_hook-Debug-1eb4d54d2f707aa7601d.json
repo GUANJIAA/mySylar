@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/root/projects/sylar/bin/test_util"
+			"path" : "/root/projects/sylar/bin/test_hook"
 		}
 	],
 	"backtrace" : 1,
@@ -29,25 +29,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 46,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 49,
+				"line" : 70,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 47,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 48,
+				"line" : 69,
 				"parent" : 0
 			},
 			{
@@ -71,7 +71,7 @@
 			[
 				{
 					"backtrace" : 5,
-					"define" : "__FILE__=\"tests/test_util.cc\""
+					"define" : "__FILE__=\"tests/test_hook.cc\""
 				}
 			],
 			"language" : "CXX",
@@ -88,7 +88,7 @@
 			"id" : "sylar::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "test_util::@6890427a1f51a3e7e1df",
+	"id" : "test_hook::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -128,8 +128,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_util",
-	"nameOnDisk" : "test_util",
+	"name" : "test_hook",
+	"nameOnDisk" : "test_hook",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/test_util.cc",
+			"path" : "tests/test_hook.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

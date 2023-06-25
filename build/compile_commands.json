@@ -61,6 +61,12 @@
 },
 {
   "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/address.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/address.cc.o -c /root/projects/sylar/sylar/address.cc",
+  "file": "/root/projects/sylar/sylar/address.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/address.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
   "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test.dir/tests/test.cc.o -c /root/projects/sylar/tests/test.cc",
   "file": "/root/projects/sylar/tests/test.cc",
   "output": "CMakeFiles/test.dir/tests/test.cc.o"
@@ -106,5 +112,11 @@
   "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_hook.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_hook.dir/tests/test_hook.cc.o -c /root/projects/sylar/tests/test_hook.cc",
   "file": "/root/projects/sylar/tests/test_hook.cc",
   "output": "CMakeFiles/test_hook.dir/tests/test_hook.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_address.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_address.dir/tests/test_address.cc.o -c /root/projects/sylar/tests/test_address.cc",
+  "file": "/root/projects/sylar/tests/test_address.cc",
+  "output": "CMakeFiles/test_address.dir/tests/test_address.cc.o"
 }
 ]

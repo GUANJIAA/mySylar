@@ -817,6 +817,9 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/projects/sylar/tests/test_h
   /usr/include/boost/range/detail/misc_concept.hpp \
   /usr/include/boost/range/detail/safe_bool.hpp \
   /usr/include/boost/container/container_fwd.hpp \
+  /root/projects/sylar/sylar/endian.h \
+  /usr/include/byteswap.h \
+  /root/projects/sylar/sylar/hook.h \
   /root/projects/sylar/sylar/marco.h \
   /usr/include/arpa/inet.h \
   /usr/include/netinet/in.h \
@@ -826,6 +829,8 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/projects/sylar/tests/test_h
 /usr/include/bits/in.h:
 
 /root/projects/sylar/sylar/marco.h:
+
+/usr/include/byteswap.h:
 
 /usr/include/boost/container/container_fwd.hpp:
 
@@ -1198,6 +1203,8 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/projects/sylar/tests/test_h
 /usr/include/boost/mpl/void.hpp:
 
 /usr/include/boost/mpl/tag.hpp:
+
+/root/projects/sylar/sylar/endian.h:
 
 /usr/include/boost/mpl/vector/aux_/pop_back.hpp:
 
