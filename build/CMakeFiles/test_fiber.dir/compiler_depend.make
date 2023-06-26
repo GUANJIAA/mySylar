@@ -819,8 +819,17 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: /root/projects/sylar/tests/test
   /usr/include/bits/fcntl-linux.h \
   /usr/include/linux/falloc.h \
   /usr/include/bits/stat.h \
-  /root/projects/sylar/sylar/marco.h
+  /root/projects/sylar/sylar/marco.h \
+  /root/projects/sylar/sylar/address.h \
+  /usr/include/sys/un.h \
+  /usr/include/netinet/in.h \
+  /usr/include/bits/in.h \
+  /root/projects/sylar/sylar/socket.h
 
+
+/root/projects/sylar/sylar/socket.h:
+
+/usr/include/bits/in.h:
 
 /root/projects/sylar/sylar/marco.h:
 
@@ -1020,6 +1029,8 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: /root/projects/sylar/tests/test
 
 /usr/include/boost/mpl/at_fwd.hpp:
 
+/usr/include/netinet/in.h:
+
 /usr/include/boost/mpl/vector/vector20.hpp:
 
 /usr/include/boost/mpl/aux_/push_front_impl.hpp:
@@ -1029,6 +1040,8 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: /root/projects/sylar/tests/test
 /usr/include/boost/mpl/front_inserter.hpp:
 
 /usr/include/boost/mpl/push_back.hpp:
+
+/usr/include/sys/un.h:
 
 /usr/include/boost/mpl/back_inserter.hpp:
 
@@ -1911,6 +1924,8 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: /root/projects/sylar/tests/test
 /opt/rh/devtoolset-7/root/usr/include/c++/7/ext/aligned_buffer.h:
 
 /usr/local/include/yaml-cpp/emittermanip.h:
+
+/root/projects/sylar/sylar/address.h:
 
 /usr/include/boost/detail/indirect_traits.hpp:
 

@@ -7,7 +7,7 @@
  * @FilePath: /sylar/sylar/thread.h
  * @版权声明
  */
-
+#pragma once
 #ifndef __SYLAR_THREAD_H__
 #define __SYLAR_THREAD_H__
 

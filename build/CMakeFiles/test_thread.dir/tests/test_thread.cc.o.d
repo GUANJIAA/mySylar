@@ -728,4 +728,7 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/asm-generic/sockios.h /usr/include/fcntl.h \
  /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
  /usr/include/linux/falloc.h /usr/include/bits/stat.h \
- /root/projects/sylar/tests/../sylar/marco.h
+ /root/projects/sylar/tests/../sylar/marco.h \
+ /root/projects/sylar/tests/../sylar/address.h /usr/include/sys/un.h \
+ /usr/include/netinet/in.h /usr/include/bits/in.h \
+ /root/projects/sylar/tests/../sylar/socket.h

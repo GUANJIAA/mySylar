@@ -701,5 +701,4 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/fstream \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/basic_file.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++io.h \
- /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/fstream.tcc \
- /root/projects/sylar/tests/../sylar/log.h
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/fstream.tcc

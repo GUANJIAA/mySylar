@@ -6,7 +6,7 @@
  * @Description: 日志系统
  * @FilePath: /sylar/sylar/log.h
  */
-
+#pragma once
 #ifndef __SYLAR_LOG_H__
 #define __SYLAR_LOG_H__
 

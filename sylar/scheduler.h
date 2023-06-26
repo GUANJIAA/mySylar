@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __SYLAR_SCHEDULER_H__
 #define __SYLAR_SCHEDULER_H__
 

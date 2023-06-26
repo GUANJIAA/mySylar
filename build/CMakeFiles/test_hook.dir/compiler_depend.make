@@ -821,10 +821,15 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/projects/sylar/tests/test_h
   /usr/include/byteswap.h \
   /root/projects/sylar/sylar/hook.h \
   /root/projects/sylar/sylar/marco.h \
-  /usr/include/arpa/inet.h \
+  /root/projects/sylar/sylar/address.h \
+  /usr/include/sys/un.h \
   /usr/include/netinet/in.h \
-  /usr/include/bits/in.h
+  /usr/include/bits/in.h \
+  /root/projects/sylar/sylar/socket.h \
+  /usr/include/arpa/inet.h
 
+
+/root/projects/sylar/sylar/socket.h:
 
 /usr/include/bits/in.h:
 
@@ -967,6 +972,8 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/projects/sylar/tests/test_h
 /usr/include/boost/mpl/front_inserter.hpp:
 
 /usr/include/boost/mpl/push_back.hpp:
+
+/usr/include/sys/un.h:
 
 /usr/include/boost/mpl/back_inserter.hpp:
 
@@ -1295,6 +1302,8 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/projects/sylar/tests/test_h
 /usr/include/boost/mpl/list/aux_/O1_size.hpp:
 
 /usr/include/boost/type_traits/is_same.hpp:
+
+/root/projects/sylar/sylar/address.h:
 
 /usr/include/boost/detail/indirect_traits.hpp:
 

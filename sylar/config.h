@@ -7,6 +7,7 @@
  * @FilePath: /sylar/sylar/config.h
  * @版权声明
  */
+#pragma once
 #ifndef __SYLAR_CONFIG_H__
 #define __SYLAR_CONFIG_H__
 

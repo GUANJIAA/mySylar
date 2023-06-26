@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __SYLAR__SINGLETON_H__
 #define __SYLAR__SINGLETON_H__
 

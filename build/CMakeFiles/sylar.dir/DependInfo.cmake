@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/projects/sylar/sylar/iomanager.cc" "CMakeFiles/sylar.dir/sylar/iomanager.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/iomanager.cc.o.d"
   "/root/projects/sylar/sylar/log.cc" "CMakeFiles/sylar.dir/sylar/log.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/log.cc.o.d"
   "/root/projects/sylar/sylar/scheduler.cc" "CMakeFiles/sylar.dir/sylar/scheduler.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/scheduler.cc.o.d"
+  "/root/projects/sylar/sylar/socket.cc" "CMakeFiles/sylar.dir/sylar/socket.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/socket.cc.o.d"
   "/root/projects/sylar/sylar/thread.cc" "CMakeFiles/sylar.dir/sylar/thread.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/thread.cc.o.d"
   "/root/projects/sylar/sylar/timer.cc" "CMakeFiles/sylar.dir/sylar/timer.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/timer.cc.o.d"
   "/root/projects/sylar/sylar/util.cc" "CMakeFiles/sylar.dir/sylar/util.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/util.cc.o.d"

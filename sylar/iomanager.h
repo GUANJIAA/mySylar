@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __SYLAR_IOMANAGER_H__
 #define __SYLAR_IOMANAGER_H__
 

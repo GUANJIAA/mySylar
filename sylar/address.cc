@@ -290,7 +290,7 @@ namespace sylar
     }
 
     // IPAddress
-    IPAddress::ptr IPAddress::Create(const char *address, uint32_t port)
+    IPAddress::ptr IPAddress::Create(const char *address, uint16_t port)
     {
         addrinfo hints, *result;
         memset(&hints, 0, sizeof(addrinfo));
@@ -325,7 +325,7 @@ namespace sylar
     }
 
     // IPv4
-    IPv4Address::ptr IPv4Address::Create(const char *address, uint32_t port)
+    IPv4Address::ptr IPv4Address::Create(const char *address, uint16_t port)
     {
         IPv4Address::ptr rt(new IPv4Address);
         rt->m_addr.sin_port = byteswapOnLittleEndian(port);
@@ -345,7 +345,7 @@ namespace sylar
         m_addr = address;
     }
 
-    IPv4Address::IPv4Address(uint32_t address, uint32_t port)
+    IPv4Address::IPv4Address(uint32_t address, uint16_t port)
     {
         memset(&m_addr, 0, sizeof(m_addr));
         m_addr.sin_family = AF_INET;
@@ -354,6 +354,11 @@ namespace sylar
     }
 
     const sockaddr *IPv4Address::getAddr() const
+    {
+        return (sockaddr *)&m_addr;
+    }
+
+    sockaddr *IPv4Address::getAddr()
     {
         return (sockaddr *)&m_addr;
     }
@@ -414,13 +419,13 @@ namespace sylar
         return byteswapOnLittleEndian(m_addr.sin_port);
     }
 
-    void IPv4Address::setPort(uint32_t val)
+    void IPv4Address::setPort(uint16_t val)
     {
         m_addr.sin_port = byteswapOnLittleEndian(val);
     }
 
     // IPv6
-    IPv6Address::ptr IPv6Address::Create(const char *address, uint32_t port)
+    IPv6Address::ptr IPv6Address::Create(const char *address, uint16_t port)
     {
         IPv6Address::ptr rt(new IPv6Address);
         rt->m_addr.sin6_port = byteswapOnLittleEndian(port);
@@ -446,7 +451,7 @@ namespace sylar
         m_addr = address;
     }
 
-    IPv6Address::IPv6Address(const uint8_t address[16], uint32_t port)
+    IPv6Address::IPv6Address(const uint8_t address[16], uint16_t port)
     {
         memset(&m_addr, 0, sizeof(m_addr));
         m_addr.sin6_family = AF_INET6;
@@ -455,6 +460,11 @@ namespace sylar
     }
 
     const sockaddr *IPv6Address::getAddr() const
+    {
+        return (sockaddr *)&m_addr;
+    }
+
+    sockaddr *IPv6Address::getAddr()
     {
         return (sockaddr *)&m_addr;
     }
@@ -539,7 +549,7 @@ namespace sylar
         return byteswapOnLittleEndian(m_addr.sin6_port);
     }
 
-    void IPv6Address::setPort(uint32_t val)
+    void IPv6Address::setPort(uint16_t val)
     {
         m_addr.sin6_port = byteswapOnLittleEndian(val);
     }
@@ -579,9 +589,19 @@ namespace sylar
         return (sockaddr *)&m_addr;
     }
 
+    sockaddr *UnixAddress::getAddr()
+    {
+        return (sockaddr *)&m_addr;
+    }
+
     socklen_t UnixAddress::getAddrLen() const
     {
         return m_length;
+    }
+
+    void UnixAddress::setAddrlen(uint32_t val)
+    {
+        m_length = val;
     }
 
     std::ostream &UnixAddress::insert(std::ostream &os) const
@@ -607,6 +627,11 @@ namespace sylar
     }
 
     const sockaddr *UnknowAddress::getAddr() const
+    {
+        return &m_addr;
+    }
+
+    sockaddr *UnknowAddress::getAddr()
     {
         return &m_addr;
     }

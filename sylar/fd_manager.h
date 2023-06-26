@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __FD_MANAGER_H__
 #define __FD_MANAGER_H__
 

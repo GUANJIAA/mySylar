@@ -7,6 +7,7 @@
  * @FilePath: /sylar/sylar/sylar.h
  * @版权声明
  */
+#pragma once
 #ifndef __SYLAR_SYLAR_H__
 #define __SYLAR_SYLAR_H__
 
@@ -23,5 +24,7 @@
 #include "fiber.h"
 #include "config.h"
 #include "marco.h"
+#include "address.h"
+#include "socket.h"
 
 #endif

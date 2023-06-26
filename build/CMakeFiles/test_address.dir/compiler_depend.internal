@@ -825,4 +825,5 @@ CMakeFiles/test_address.dir/tests/test_address.cc.o
  /usr/include/linux/falloc.h
  /usr/include/bits/stat.h
  /root/projects/sylar/sylar/marco.h
+ /root/projects/sylar/sylar/socket.h
 

@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __SYLAR_NONCOPYABLE_H__
 #define __SYLAR_NONCOPYABLE_H__
 
