@@ -204,8 +204,7 @@ CMakeFiles/test.dir/tests/test.cc.o: /root/projects/sylar/tests/test.cc \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/basic_file.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/x86_64-redhat-linux/bits/c++io.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/fstream.tcc \
-  /usr/include/string.h \
-  /root/projects/sylar/sylar/util.h
+  /usr/include/string.h
 
 
 /usr/include/string.h:

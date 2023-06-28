@@ -732,4 +732,5 @@ CMakeFiles/test_address.dir/tests/test_address.cc.o: \
  /usr/include/fcntl.h /usr/include/bits/fcntl.h \
  /usr/include/bits/fcntl-linux.h /usr/include/linux/falloc.h \
  /usr/include/bits/stat.h /root/projects/sylar/tests/../sylar/marco.h \
- /root/projects/sylar/tests/../sylar/socket.h
+ /root/projects/sylar/tests/../sylar/socket.h \
+ /root/projects/sylar/tests/../sylar/bytearray.h

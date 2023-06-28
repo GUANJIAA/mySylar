@@ -824,7 +824,6 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: /root/projects/sylar/tests/te
   /usr/include/sys/un.h \
   /usr/include/netinet/in.h \
   /usr/include/bits/in.h \
-  /root/projects/sylar/sylar/socket.h \
   /root/projects/sylar/sylar/socket.h
 
 

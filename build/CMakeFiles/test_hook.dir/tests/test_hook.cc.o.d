@@ -732,4 +732,5 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: \
  /root/projects/sylar/tests/../sylar/marco.h \
  /root/projects/sylar/tests/../sylar/address.h /usr/include/sys/un.h \
  /usr/include/netinet/in.h /usr/include/bits/in.h \
- /root/projects/sylar/tests/../sylar/socket.h /usr/include/arpa/inet.h
+ /root/projects/sylar/tests/../sylar/socket.h \
+ /root/projects/sylar/tests/../sylar/bytearray.h /usr/include/arpa/inet.h

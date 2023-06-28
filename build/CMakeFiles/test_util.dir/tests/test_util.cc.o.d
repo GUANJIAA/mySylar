@@ -731,4 +731,5 @@ CMakeFiles/test_util.dir/tests/test_util.cc.o: \
  /root/projects/sylar/tests/../sylar/marco.h \
  /root/projects/sylar/tests/../sylar/address.h /usr/include/sys/un.h \
  /usr/include/netinet/in.h /usr/include/bits/in.h \
- /root/projects/sylar/tests/../sylar/socket.h
+ /root/projects/sylar/tests/../sylar/socket.h \
+ /root/projects/sylar/tests/../sylar/bytearray.h

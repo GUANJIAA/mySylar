@@ -819,7 +819,6 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/projects/sylar/tests/test_h
   /usr/include/boost/container/container_fwd.hpp \
   /root/projects/sylar/sylar/endian.h \
   /usr/include/byteswap.h \
-  /root/projects/sylar/sylar/hook.h \
   /root/projects/sylar/sylar/marco.h \
   /root/projects/sylar/sylar/address.h \
   /usr/include/sys/un.h \
