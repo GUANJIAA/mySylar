@@ -23,6 +23,7 @@ namespace sylar
         default:
             SYLAR_ASSERT2(false, "getContext");
         }
+        throw std::invalid_argument("getContext invalid event");
     }
 
     void IOManager::FdContext::resetContext(IOManager::FdContext::EventContext &ctx)
@@ -39,11 +40,11 @@ namespace sylar
         EventContext &ctx = getContext(event);
         if (ctx.cb)
         {
-            ctx.scheduler->schedule(ctx.cb);
+            ctx.scheduler->schedule(&ctx.cb);
         }
         else
         {
-            ctx.scheduler->schedule(ctx.fiber);
+            ctx.scheduler->schedule(&ctx.fiber);
         }
         ctx.scheduler = nullptr;
         return;
@@ -322,7 +323,7 @@ namespace sylar
 
     void IOManager::idle()
     {
-        epoll_event *events = new epoll_event[64]();
+        epoll_event *events = new epoll_event[256]();
         std::shared_ptr<epoll_event> shared_event(events, [](epoll_event *ptr)
                                                   { delete[] ptr; });
 
@@ -338,7 +339,7 @@ namespace sylar
             int rt = 0;
             do
             {
-                static const int MAX_TIMEOUT = 100;
+                static const int MAX_TIMEOUT = 3000;
                 if (next_timerout != ~0ull)
                 {
                     next_timerout = (int)next_timerout > MAX_TIMEOUT
@@ -349,7 +350,7 @@ namespace sylar
                 {
                     next_timerout = MAX_TIMEOUT;
                 }
-                rt = epoll_wait(m_epfd, events, 64, (int)next_timerout);
+                rt = epoll_wait(m_epfd, events, 256, (int)next_timerout);
 
                 if (rt < 0 && errno == EINTR)
                 {

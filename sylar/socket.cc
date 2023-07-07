@@ -518,4 +518,9 @@ namespace sylar
                                       << errno << " errstr=" << strerror(errno);
         }
     }
+
+    std::ostream &operator<<(std::ostream &os, const Socket &addr)
+    {
+        return addr.dump(os);
+    }
 }

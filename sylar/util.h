@@ -24,6 +24,20 @@ namespace sylar
     uint64_t GetCurrentMS();
     uint64_t GetCurrentUS();
 
+    std::string timeToStr(time_t ts = time(0), const std::string &format = "%Y-%m-%d %H:%M:%S");
+
+    class FSUtil
+    {
+    public:
+        static void ListAllFile(std::vector<std::string> &files,
+                                const std::string &path,
+                                const std::string &subfix);
+
+        static bool Mkdir(const std::string &dirname);
+
+        static bool IsRunningPidfile(const std::string &pidfile);
+    };
+
 };
 
 #endif

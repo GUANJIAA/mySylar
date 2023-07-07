@@ -22,7 +22,24 @@ set(LIB_SRC
     sylar/address.cc
     sylar/socket.cc
     sylar/bytearray.cc
+    sylar/http/http.cc
+    sylar/http/http_parser.cc
+    sylar/tcp_server.cc
+    sylar/stream.cc
+    sylar/socket_stream.cc
+    sylar/http/http_session.cc
+    sylar/http/http_server.cc
+    sylar/http/servlet.cc
+    sylar/http/http_connection.cc
+    sylar/daemon.cc
+    sylar/env.cc
+    sylar/application.cc
 )
+
+ragelmaker(sylar/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/sylar/http)
+ragelmaker(sylar/http/httpclient_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/sylar/http)
+ragelmaker(sylar/uri.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/sylar)
+
 
 add_library(sylar SHARED ${LIB_SRC})
 force_redefine_file_macro_for_sources(sylar)
@@ -85,6 +102,61 @@ add_executable(test_bytearray tests/test_bytearray.cc)
 add_dependencies(test_bytearray sylar)
 force_redefine_file_macro_for_sources(test_bytearray)
 target_link_libraries(test_bytearray ${LIB_LIB})
+
+add_executable(test_http tests/test_http.cc)
+add_dependencies(test_http sylar)
+force_redefine_file_macro_for_sources(test_http)
+target_link_libraries(test_http ${LIB_LIB})
+
+add_executable(test_http_parser tests/test_http_parser.cc)
+add_dependencies(test_http_parser sylar)
+force_redefine_file_macro_for_sources(test_http_parser)
+target_link_libraries(test_http_parser ${LIB_LIB})
+
+add_executable(test_tcp_server tests/test_tcp_server.cc)
+add_dependencies(test_tcp_server sylar)
+force_redefine_file_macro_for_sources(test_tcp_server)
+target_link_libraries(test_tcp_server ${LIB_LIB})
+
+add_executable(echo_server examples/echo_server.cc)
+add_dependencies(echo_server sylar)
+force_redefine_file_macro_for_sources(echo_server)
+target_link_libraries(echo_server ${LIB_LIB})
+
+add_executable(test_http_server tests/test_http_server.cc)
+add_dependencies(test_http_server sylar)
+force_redefine_file_macro_for_sources(test_http_server)
+target_link_libraries(test_http_server ${LIB_LIB})
+
+add_executable(test_http_connection tests/test_http_connection.cc)
+add_dependencies(test_http_connection sylar)
+force_redefine_file_macro_for_sources(test_http_connection)
+target_link_libraries(test_http_connection ${LIB_LIB})
+
+add_executable(test_uri tests/test_uri.cc)
+add_dependencies(test_uri sylar)
+force_redefine_file_macro_for_sources(test_uri)
+target_link_libraries(test_uri ${LIB_LIB})
+
+add_executable(my_http_server samples/my_http_server.cc)
+add_dependencies(my_http_server sylar)
+force_redefine_file_macro_for_sources(my_http_server)
+target_link_libraries(my_http_server ${LIB_LIB})
+
+add_executable(test_daemon tests/test_daemon.cc)
+add_dependencies(test_daemon sylar)
+force_redefine_file_macro_for_sources(test_daemon)
+target_link_libraries(test_daemon ${LIB_LIB})
+
+add_executable(test_env tests/test_env.cc)
+add_dependencies(test_env sylar)
+force_redefine_file_macro_for_sources(test_env)
+target_link_libraries(test_env ${LIB_LIB})
+
+add_executable(test_application tests/test_application.cc)
+add_dependencies(test_application sylar)
+force_redefine_file_macro_for_sources(test_application)
+target_link_libraries(test_application ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

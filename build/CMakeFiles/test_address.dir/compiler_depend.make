@@ -824,7 +824,8 @@ CMakeFiles/test_address.dir/tests/test_address.cc.o: /root/projects/sylar/tests/
   /usr/include/linux/falloc.h \
   /usr/include/bits/stat.h \
   /root/projects/sylar/sylar/marco.h \
-  /root/projects/sylar/sylar/socket.h
+  /root/projects/sylar/sylar/socket.h \
+  /root/projects/sylar/sylar/bytearray.h
 
 
 /root/projects/sylar/sylar/socket.h:
@@ -1970,6 +1971,8 @@ CMakeFiles/test_address.dir/tests/test_address.cc.o: /root/projects/sylar/tests/
 /usr/local/include/yaml-cpp/noexcept.h:
 
 /usr/include/locale.h:
+
+/root/projects/sylar/sylar/bytearray.h:
 
 /usr/include/bits/socket.h:
 

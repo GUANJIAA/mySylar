@@ -17,7 +17,8 @@ namespace sylar
     static thread_local Fiber *t_fiber = nullptr;
     static thread_local Fiber::ptr t_threadFiber = nullptr;
 
-    static ConfigVar<uint32_t>::ptr g_fiber_stack_size = Config::Lookup<uint32_t>("fiber.stack_size", 128 * 1024, "fiber stack size");
+    static ConfigVar<uint32_t>::ptr g_fiber_stack_size = 
+    Config::Lookup<uint32_t>("fiber.stack_size", 128 * 1024, "fiber stack size");
 
     class MallocStackAllocator
     {
@@ -87,7 +88,7 @@ namespace sylar
         {
             SYLAR_ASSERT(m_state == TERM ||
                          m_state == INIT ||
-                         m_state == EXCPT);
+                         m_state == EXCEPT);
 
             Stackallocator::Dealloc(m_stack, m_stacksize);
         }
@@ -128,7 +129,9 @@ namespace sylar
     void Fiber::reset(std::function<void()> cb)
     {
         SYLAR_ASSERT(m_stack);
-        SYLAR_ASSERT(m_state == TERM || m_state == INIT || m_state == EXCPT);
+        SYLAR_ASSERT(m_state == TERM ||
+                     m_state == INIT ||
+                     m_state == EXCEPT);
 
         m_cb = cb;
         if (getcontext(&m_ctx))
@@ -223,7 +226,7 @@ namespace sylar
         }
         catch (std::exception &ex)
         {
-            cur->m_state = EXCPT;
+            cur->m_state = EXCEPT;
             SYLAR_LOG_ERROR(g_logger) << "Fiber Except: " << ex.what()
                                       << " fiber_id=" << cur->getId()
                                       << std::endl
@@ -231,7 +234,7 @@ namespace sylar
         }
         catch (...)
         {
-            cur->m_state = EXCPT;
+            cur->m_state = EXCEPT;
             SYLAR_LOG_ERROR(g_logger) << "Fiber Except"
                                       << " fiber_id=" << cur->getId()
                                       << std::endl
@@ -256,7 +259,7 @@ namespace sylar
         }
         catch (std::exception &ex)
         {
-            cur->m_state = EXCPT;
+            cur->m_state = EXCEPT;
             SYLAR_LOG_ERROR(g_logger) << "Fiber Except: " << ex.what()
                                       << " fiber_id=" << cur->getId()
                                       << std::endl
@@ -264,7 +267,7 @@ namespace sylar
         }
         catch (...)
         {
-            cur->m_state = EXCPT;
+            cur->m_state = EXCEPT;
             SYLAR_LOG_ERROR(g_logger) << "Fiber Except"
                                       << " fiber_id=" << cur->getId()
                                       << std::endl

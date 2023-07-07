@@ -79,6 +79,96 @@
 },
 {
   "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http.cc.o -c /root/projects/sylar/sylar/http/http.cc",
+  "file": "/root/projects/sylar/sylar/http/http.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/http/http.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http_parser.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http_parser.cc.o -c /root/projects/sylar/sylar/http/http_parser.cc",
+  "file": "/root/projects/sylar/sylar/http/http_parser.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/http/http_parser.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/tcp_server.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/tcp_server.cc.o -c /root/projects/sylar/sylar/tcp_server.cc",
+  "file": "/root/projects/sylar/sylar/tcp_server.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/tcp_server.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/stream.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/stream.cc.o -c /root/projects/sylar/sylar/stream.cc",
+  "file": "/root/projects/sylar/sylar/stream.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/stream.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/socket_stream.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/socket_stream.cc.o -c /root/projects/sylar/sylar/socket_stream.cc",
+  "file": "/root/projects/sylar/sylar/socket_stream.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/socket_stream.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http_session.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http_session.cc.o -c /root/projects/sylar/sylar/http/http_session.cc",
+  "file": "/root/projects/sylar/sylar/http/http_session.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/http/http_session.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http_server.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http_server.cc.o -c /root/projects/sylar/sylar/http/http_server.cc",
+  "file": "/root/projects/sylar/sylar/http/http_server.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/http/http_server.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/servlet.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/servlet.cc.o -c /root/projects/sylar/sylar/http/servlet.cc",
+  "file": "/root/projects/sylar/sylar/http/servlet.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/http/servlet.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http_connection.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o -c /root/projects/sylar/sylar/http/http_connection.cc",
+  "file": "/root/projects/sylar/sylar/http/http_connection.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/daemon.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/daemon.cc.o -c /root/projects/sylar/sylar/daemon.cc",
+  "file": "/root/projects/sylar/sylar/daemon.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/daemon.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/env.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/env.cc.o -c /root/projects/sylar/sylar/env.cc",
+  "file": "/root/projects/sylar/sylar/env.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/env.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/application.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/application.cc.o -c /root/projects/sylar/sylar/application.cc",
+  "file": "/root/projects/sylar/sylar/application.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/application.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http11_parser.rl.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http11_parser.rl.cc.o -c /root/projects/sylar/sylar/http/http11_parser.rl.cc",
+  "file": "/root/projects/sylar/sylar/http/http11_parser.rl.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/http/http11_parser.rl.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/httpclient_parser.rl.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/httpclient_parser.rl.cc.o -c /root/projects/sylar/sylar/http/httpclient_parser.rl.cc",
+  "file": "/root/projects/sylar/sylar/http/httpclient_parser.rl.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/http/httpclient_parser.rl.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/uri.rl.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/uri.rl.cc.o -c /root/projects/sylar/sylar/uri.rl.cc",
+  "file": "/root/projects/sylar/sylar/uri.rl.cc",
+  "output": "CMakeFiles/sylar.dir/sylar/uri.rl.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
   "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test.dir/tests/test.cc.o -c /root/projects/sylar/tests/test.cc",
   "file": "/root/projects/sylar/tests/test.cc",
   "output": "CMakeFiles/test.dir/tests/test.cc.o"
@@ -142,5 +232,71 @@
   "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_bytearray.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o -c /root/projects/sylar/tests/test_bytearray.cc",
   "file": "/root/projects/sylar/tests/test_bytearray.cc",
   "output": "CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_http.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http.dir/tests/test_http.cc.o -c /root/projects/sylar/tests/test_http.cc",
+  "file": "/root/projects/sylar/tests/test_http.cc",
+  "output": "CMakeFiles/test_http.dir/tests/test_http.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_http_parser.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o -c /root/projects/sylar/tests/test_http_parser.cc",
+  "file": "/root/projects/sylar/tests/test_http_parser.cc",
+  "output": "CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_tcp_server.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o -c /root/projects/sylar/tests/test_tcp_server.cc",
+  "file": "/root/projects/sylar/tests/test_tcp_server.cc",
+  "output": "CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"examples/echo_server.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/echo_server.dir/examples/echo_server.cc.o -c /root/projects/sylar/examples/echo_server.cc",
+  "file": "/root/projects/sylar/examples/echo_server.cc",
+  "output": "CMakeFiles/echo_server.dir/examples/echo_server.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_http_server.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o -c /root/projects/sylar/tests/test_http_server.cc",
+  "file": "/root/projects/sylar/tests/test_http_server.cc",
+  "output": "CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_http_connection.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o -c /root/projects/sylar/tests/test_http_connection.cc",
+  "file": "/root/projects/sylar/tests/test_http_connection.cc",
+  "output": "CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_uri.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_uri.dir/tests/test_uri.cc.o -c /root/projects/sylar/tests/test_uri.cc",
+  "file": "/root/projects/sylar/tests/test_uri.cc",
+  "output": "CMakeFiles/test_uri.dir/tests/test_uri.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"samples/my_http_server.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o -c /root/projects/sylar/samples/my_http_server.cc",
+  "file": "/root/projects/sylar/samples/my_http_server.cc",
+  "output": "CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_daemon.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o -c /root/projects/sylar/tests/test_daemon.cc",
+  "file": "/root/projects/sylar/tests/test_daemon.cc",
+  "output": "CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_env.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_env.dir/tests/test_env.cc.o -c /root/projects/sylar/tests/test_env.cc",
+  "file": "/root/projects/sylar/tests/test_env.cc",
+  "output": "CMakeFiles/test_env.dir/tests/test_env.cc.o"
+},
+{
+  "directory": "/root/projects/sylar/build",
+  "command": "/usr/bin/c++  -D__FILE__=\\\"tests/test_application.cc\\\"   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_application.dir/tests/test_application.cc.o -c /root/projects/sylar/tests/test_application.cc",
+  "file": "/root/projects/sylar/tests/test_application.cc",
+  "output": "CMakeFiles/test_application.dir/tests/test_application.cc.o"
 }
 ]

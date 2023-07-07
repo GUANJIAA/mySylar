@@ -1,6 +1,4 @@
-logs:
+k1:
     - name: root
-      level: info
-      appenders:
-          - type: FileLogAppender
-            file: mutex.txt
+      age: 33
+      sex: true

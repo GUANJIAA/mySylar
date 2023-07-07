@@ -10,5 +10,16 @@
 /root/projects/sylar/build/CMakeFiles/test_address.dir
 /root/projects/sylar/build/CMakeFiles/test_socket.dir
 /root/projects/sylar/build/CMakeFiles/test_bytearray.dir
+/root/projects/sylar/build/CMakeFiles/test_http.dir
+/root/projects/sylar/build/CMakeFiles/test_http_parser.dir
+/root/projects/sylar/build/CMakeFiles/test_tcp_server.dir
+/root/projects/sylar/build/CMakeFiles/echo_server.dir
+/root/projects/sylar/build/CMakeFiles/test_http_server.dir
+/root/projects/sylar/build/CMakeFiles/test_http_connection.dir
+/root/projects/sylar/build/CMakeFiles/test_uri.dir
+/root/projects/sylar/build/CMakeFiles/my_http_server.dir
+/root/projects/sylar/build/CMakeFiles/test_daemon.dir
+/root/projects/sylar/build/CMakeFiles/test_env.dir
+/root/projects/sylar/build/CMakeFiles/test_application.dir
 /root/projects/sylar/build/CMakeFiles/edit_cache.dir
 /root/projects/sylar/build/CMakeFiles/rebuild_cache.dir

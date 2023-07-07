@@ -825,6 +825,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: /root/projects/sylar/te
   /usr/include/netinet/in.h \
   /usr/include/bits/in.h \
   /root/projects/sylar/sylar/socket.h \
+  /root/projects/sylar/sylar/bytearray.h \
   /usr/include/arpa/inet.h
 
 
@@ -845,6 +846,8 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: /root/projects/sylar/te
 /usr/include/bits/sockaddr.h:
 
 /usr/include/bits/socket_type.h:
+
+/root/projects/sylar/sylar/bytearray.h:
 
 /usr/include/bits/socket.h:
 

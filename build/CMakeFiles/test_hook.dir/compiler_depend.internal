@@ -826,5 +826,6 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o
  /usr/include/netinet/in.h
  /usr/include/bits/in.h
  /root/projects/sylar/sylar/socket.h
+ /root/projects/sylar/sylar/bytearray.h
  /usr/include/arpa/inet.h
 

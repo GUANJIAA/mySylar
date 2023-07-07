@@ -24,7 +24,7 @@ namespace sylar
             EXEC,
             TERM,
             READY,
-            EXCPT
+            EXCEPT
         };
 
     private:

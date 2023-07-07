@@ -103,7 +103,7 @@ namespace sylar
         {
             node = host;
         }
-        SYLAR_LOG_INFO(g_logger) << node;
+        // SYLAR_LOG_INFO(g_logger) << node;
         // SYLAR_LOG_INFO(g_logger) << service;
         int error = getaddrinfo(node.c_str(), service, &hints, &results);
         if (error)
@@ -253,7 +253,7 @@ namespace sylar
         return getAddr()->sa_family;
     }
 
-    std::string Address::toString()
+    std::string Address::toString() const
     {
         std::stringstream ss;
         insert(ss);
@@ -645,5 +645,10 @@ namespace sylar
     {
         os << "[UnknownAddress family=" << m_addr.sa_family << "]";
         return os;
+    }
+
+    std::ostream &operator<<(std::ostream &os, const Address &addr)
+    {
+        return addr.insert(os);
     }
 }

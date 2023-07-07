@@ -10,9 +10,11 @@
 
 #include "../sylar/config.h"
 #include "../sylar/log.h"
+#include "../sylar/env.h"
 #include <iostream>
 #include <yaml-cpp/yaml.h>
 
+/*
 sylar::ConfigVar<int>::ptr g_int_value_config = sylar::Config::Lookup("system.port", (int)8080, "system port");
 
 sylar::ConfigVar<float>::ptr g_float_value_config = sylar::Config::Lookup("system.value", (float)10.2f, "system value");
@@ -220,15 +222,29 @@ void test_log()
     system_log->setFormatter("%d - %m%n");
     SYLAR_LOG_INFO(system_log) << "hello system" << std::endl;
 }
+*/
+
+void test_loadconf()
+{
+    sylar::Config::LoadFromConfDir("conf");
+}
 
 int main(int argc, char **argv)
 {
 
     // test_class();
-    test_log();
+    // test_log();
+    sylar::EnvMgr::GetInstance()->init(argc, argv);
+    test_loadconf();
+    std::cout << "=========" << std::endl;
+    sleep(10);
+    test_loadconf();
+
+    return 0;
     sylar::Config::Visit([](sylar::ConfigVarBase::ptr var)
-                         { SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "name=" << var->getName() << " description="
-                                                    << var->getDescription() << " typename=" << var->getTypeName()
-                                                    << " value=" << var->toString(); });
+                         { SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "name=" << var->getName()
+                                                            << " description=" << var->getDescription()
+                                                            << " typename=" << var->getTypeName()
+                                                            << " value=" << var->toString(); });
     return 0;
 }

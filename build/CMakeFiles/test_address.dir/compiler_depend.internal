@@ -826,4 +826,5 @@ CMakeFiles/test_address.dir/tests/test_address.cc.o
  /usr/include/bits/stat.h
  /root/projects/sylar/sylar/marco.h
  /root/projects/sylar/sylar/socket.h
+ /root/projects/sylar/sylar/bytearray.h
 

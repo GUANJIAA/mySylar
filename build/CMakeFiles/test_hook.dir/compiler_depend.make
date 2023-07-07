@@ -825,6 +825,7 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/projects/sylar/tests/test_h
   /usr/include/netinet/in.h \
   /usr/include/bits/in.h \
   /root/projects/sylar/sylar/socket.h \
+  /root/projects/sylar/sylar/bytearray.h \
   /usr/include/arpa/inet.h
 
 
@@ -2185,6 +2186,8 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/projects/sylar/tests/test_h
 /usr/include/boost/range/functions.hpp:
 
 /usr/include/bits/ioctl-types.h:
+
+/root/projects/sylar/sylar/bytearray.h:
 
 /usr/include/bits/socket.h:
 

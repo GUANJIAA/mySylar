@@ -826,4 +826,5 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o
  /usr/include/netinet/in.h
  /usr/include/bits/in.h
  /root/projects/sylar/sylar/socket.h
+ /root/projects/sylar/sylar/bytearray.h
 

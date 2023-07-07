@@ -824,7 +824,8 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: /root/projects/sylar/tests/test
   /usr/include/sys/un.h \
   /usr/include/netinet/in.h \
   /usr/include/bits/in.h \
-  /root/projects/sylar/sylar/socket.h
+  /root/projects/sylar/sylar/socket.h \
+  /root/projects/sylar/sylar/bytearray.h
 
 
 /root/projects/sylar/sylar/socket.h:
@@ -844,6 +845,8 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: /root/projects/sylar/tests/test
 /usr/include/bits/sockaddr.h:
 
 /usr/include/bits/socket_type.h:
+
+/root/projects/sylar/sylar/bytearray.h:
 
 /usr/include/bits/socket.h:
 

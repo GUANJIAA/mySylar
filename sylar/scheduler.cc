@@ -219,7 +219,7 @@ namespace sylar
             }
 
             if (ft.fiber && (ft.fiber->getState() != Fiber::TERM &&
-                             ft.fiber->getState() != Fiber::EXCPT))
+                             ft.fiber->getState() != Fiber::EXCEPT))
             {
 
                 ft.fiber->swapIn();
@@ -230,7 +230,7 @@ namespace sylar
                     schedule(ft.fiber);
                 }
                 else if (ft.fiber->getState() != Fiber::TERM &&
-                         ft.fiber->getState() != Fiber::EXCPT)
+                         ft.fiber->getState() != Fiber::EXCEPT)
                 {
                     ft.fiber->setState(Fiber::HOLD);
                 }
@@ -254,7 +254,7 @@ namespace sylar
                     schedule(cb_fiber);
                     cb_fiber.reset();
                 }
-                else if (cb_fiber->getState() == Fiber::EXCPT ||
+                else if (cb_fiber->getState() == Fiber::EXCEPT ||
                          cb_fiber->getState() == Fiber::TERM)
                 {
                     cb_fiber->reset(nullptr);
@@ -282,7 +282,7 @@ namespace sylar
                 idle_fiber->swapIn();
                 --m_idleThreadCount;
                 if (idle_fiber->getState() != Fiber::TERM &&
-                    idle_fiber->getState() != Fiber::EXCPT)
+                    idle_fiber->getState() != Fiber::EXCEPT)
                 {
                     idle_fiber->setState(Fiber::HOLD);
                 }
