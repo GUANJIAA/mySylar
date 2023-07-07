@@ -1,1 +1,0 @@
-/usr/bin/c++  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -rdynamic CMakeFiles/echo_server.dir/examples/echo_server.cc.o -o /root/projects/sylar/bin/echo_server  -Wl,-rpath,/root/projects/sylar/lib /root/projects/sylar/lib/libsylar.so -ldl -lpthread -lyaml-cpp 
