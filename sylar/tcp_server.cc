@@ -11,8 +11,11 @@ namespace sylar
                               "tcp server read timeout");
 
     TcpServer::TcpServer(sylar::IOManager *worker,
+                         sylar::IOManager *io_worker,
                          sylar::IOManager *accept_worker)
-        : m_worker(worker), m_acceptWorker(accept_worker),
+        : m_worker(worker),
+          m_ioWorker(io_worker),
+          m_acceptWorker(accept_worker),
           m_readTimeout(g_tcp_server_read_timeout->getValue()),
           m_name("sylar/1.0.0"), m_isStop(true) {}
 
@@ -113,7 +116,7 @@ namespace sylar
             if (client)
             {
                 client->setRecvTimeout(m_readTimeout);
-                m_worker->schedule(std::bind(&TcpServer::handleClient,
+                m_ioWorker->schedule(std::bind(&TcpServer::handleClient,
                                              shared_from_this(), client));
             }
             else

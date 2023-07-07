@@ -5,7 +5,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 include (cmake/utils.cmake)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined")
+set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -ggdb -std=c++11 -lssl -lcrypto -lcrypt -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined")
 
 
 set(LIB_SRC 
@@ -34,6 +34,11 @@ set(LIB_SRC
     sylar/daemon.cc
     sylar/env.cc
     sylar/application.cc
+    sylar/util/hash_util.cc
+    sylar/http/ws_session.cc
+    sylar/http/ws_servlet.cc
+    sylar/http/ws_server.cc
+    sylar/http/ws_connection.cc
 )
 
 ragelmaker(sylar/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/sylar/http)
@@ -157,6 +162,16 @@ add_executable(test_application tests/test_application.cc)
 add_dependencies(test_application sylar)
 force_redefine_file_macro_for_sources(test_application)
 target_link_libraries(test_application ${LIB_LIB})
+
+add_executable(test_ws_server tests/test_ws_server.cc)
+add_dependencies(test_ws_server sylar)
+force_redefine_file_macro_for_sources(test_ws_server)
+target_link_libraries(test_ws_server ${LIB_LIB})
+
+add_executable(test_ws_client tests/test_ws_client.cc)
+add_dependencies(test_ws_client sylar)
+force_redefine_file_macro_for_sources(test_ws_client)
+target_link_libraries(test_ws_client ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

@@ -29,7 +29,7 @@ namespace sylar
                 SEND_CLOSE_BY_PEER = 4,
                 SEND_SOCKET_ERROR = 5,
                 TIMEOUT = 6,
-                CREATE_SCOKET_ERROR = 7,
+                CREATE_SOCKET_ERROR = 7,
                 POOL_GET_CONNECTION = 8,
                 POOL_INVALID_CONNECTION = 9,
             };

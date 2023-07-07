@@ -20,6 +20,7 @@ namespace sylar
         typedef std::shared_ptr<TcpServer> ptr;
 
         TcpServer(sylar::IOManager *worker = sylar::IOManager::GetThis(),
+                  sylar::IOManager *io_worker = sylar::IOManager::GetThis(),
                   sylar::IOManager *accept_worker = sylar::IOManager::GetThis());
         virtual ~TcpServer();
 
@@ -40,9 +41,12 @@ namespace sylar
         virtual void handleClient(Socket::ptr client);
         virtual void startAccept(Socket::ptr sock);
 
+        std::string m_type = "tcp";
+
     private:
         std::vector<Socket::ptr> m_socks;
         IOManager *m_worker;
+        IOManager *m_ioWorker;
         IOManager *m_acceptWorker;
         uint64_t m_readTimeout;
         std::string m_name;

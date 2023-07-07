@@ -1,3 +1,4 @@
+#pragma once
 #ifndef __SYLAR_HTTP_HTTP_H__
 #define __SYLAR_HTTP_HTTP_H__
 
@@ -190,12 +191,16 @@ namespace sylar
             return def;
         }
 
+        class HttpResponse;
+
         class HttpRequest
         {
         public:
             typedef std::shared_ptr<HttpRequest> ptr;
             typedef std::map<std::string, std::string, CaseInsensitiveLess> MapType;
             HttpRequest(uint8_t version = 0x11, bool close = true);
+
+            std::shared_ptr<HttpResponse> createResponse();
 
             HttpMethod getMethod() const { return m_method; }
             uint8_t getVersion() const { return m_version; }
@@ -220,6 +225,9 @@ namespace sylar
 
             bool isClose() { return m_close; }
             void setClose(bool v) { m_close = v; }
+
+            bool isWebsocket() const { return m_websocket; }
+            void setWebsocket(bool val) { m_websocket = val; }
 
             std::string getHeader(const std::string &key, const std::string &def = "") const;
             std::string getParam(const std::string &key, const std::string &def = "") const;
@@ -282,6 +290,7 @@ namespace sylar
             uint8_t m_version;
             HttpStatus m_status;
             bool m_close;
+            bool m_websocket;
 
             std::string m_path;
             std::string m_query;
@@ -316,6 +325,9 @@ namespace sylar
             bool isClose() { return m_close; }
             void setClose(bool v) { m_close = v; }
 
+            bool isWebsocket() const { return m_websocket; }
+            void setWebsocket(bool val) { m_websocket = val; }
+
             std::string getHeader(const std::string &key, const std::string &def = "") const;
             void setHeader(const std::string &key, const std::string &val);
             void delHeader(const std::string &key);
@@ -339,6 +351,7 @@ namespace sylar
             HttpStatus m_status;
             uint8_t m_version;
             bool m_close;
+            bool m_websocket;
 
             std::string m_body;
             std::string m_reason;
