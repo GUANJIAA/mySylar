@@ -1,71 +1,9 @@
-# sylar
+# mySylar
 
+## 功能介绍：
 
-
-## 开发环境
-
-- CentOS7
-- gcc 7.30
-- cmake
-
-
-
-## 项目路径
-
-bin -- 二进制
-
-build -- 中间文件路径
-
-cmake -- cmake函数文件夹
-
-CMakeLists -- cmake函数文件夹
-
-lib -- 库的输出路径
-
-Makefile
-
-sylar -- 源代码路径
-
-tests -- 测试代码路径
-
-
-
-## 日志系统
-
-1. 仿照Log4J格式
-
-   Logger（定义日志类别）
-
-   ​	|
-
-   ​	|------------Formatter（日志格式）
-
-   ​	|
-
-   Appender（日志输出地方）
-
-
-## 配置系统
-
-Config --> Yaml
-
-## 协程库封装
-
-
-
-## socket函数库
-
-
-
-## http协议开发
-
-
-
-## 分布式协议
-
-
-
-## 推荐系统
-
-![image-20230602154726887](D:\sylar服务器框架\sylar服务器框架.assets\image-20230602154726887.png)
-
+1. 模仿log4cpp制作日志模块，支持流式日志风格写日志和格式化风格写日志，支持通过yaml文件配置日志格式，自定义日志输出内容和日志输出地。
+2. 配置模块采用约定优于配置的思想。定义即可使用。不需要单独去解析。通过yaml文件和偏特化的实现可实现所有基本类型和自定义类型的数据配置。
+3. 协程模块基于ucontext_t实现用户态的线程，相当于线程中的线程，更加轻量级。封装了一个N-M的协程调度模型，N个线程，M个协程，管理协程的调度。IO协程调度模块继承于协程调度器，并使用epoll实现定时器功能。
+4. 通过hook系统底层和socket相关的API，sleep系列的API，和协程模块的搭配，使一些不具有异步功能的API，展现出异步的性能。封装socket类，统一了地址类，将IPv4，IPv6，Unix地址统一起来，并且提供域名和IP解析的功能。
+5. TcpServer模块基于Socket类，封装了一个通用的TcpServer的服务器类，可以快速绑定一个或多个地址，提供简单的API，使用便捷。HTTP模块继承于TcpServer类，采用有限状态机，实现了HTTP/1.1的简单协议和URI的解析。基于TcpServer实现HttpServer，提供了完整的HTTP的客户端API请求功能。实现了一套HttpServlet接口，支持URI的精准匹配和模糊匹配等功能。
